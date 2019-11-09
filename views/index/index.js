@@ -115,7 +115,7 @@ window.onload = () => {
               }
             }
           }
-          sResult += `<p class="flex-row"><span class="${spanColor}">${aItemOutput[i]}</span><span class="line_tip">行 ${aGetConsoleForLine[i]+1}</span></p>`
+          sResult += `<p class="flex-row"><span class="${spanColor}">${aItemOutput[i]}</span><span class="line_tip">Row ${aGetConsoleForLine[i]+1}</span></p>`
         }
         if (sResult) {
           oTip_txt.style.display = 'none'
