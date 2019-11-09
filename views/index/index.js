@@ -1,3 +1,5 @@
+const puppeteer = require('puppeteer');
+
 const {
   ipcRenderer
 } = require('electron')
@@ -22,7 +24,7 @@ window.onload = () => {
   //行列
   editor.on('cursorActivity', () => {
     let pos = editor.getCursor()
-    $('#state').innerHTML = `行 ${pos.line+1}，列 ${pos.ch}`
+    $('#state').innerHTML = `Okay ${pos.line+1}，Columns ${pos.ch}`
   })
   //resize
   window.addEventListener('resize', () => {
