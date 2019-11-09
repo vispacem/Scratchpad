@@ -36,7 +36,7 @@ app.on('ready', () => {
   // mainWin.webContents.openDevTools()
   ipcMain.on('save', () => {
     dialog.showSaveDialog({
-      title: '文件另存为',
+      title: 'Scratchpad',
       filters: [{
         name: 'javaScript',
         extensions: ['js', 'es6', 'mjs', 'pac']
