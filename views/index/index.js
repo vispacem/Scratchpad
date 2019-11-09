@@ -24,7 +24,7 @@ window.onload = () => {
   //行列
   editor.on('cursorActivity', () => {
     let pos = editor.getCursor()
-    $('#state').innerHTML = `Okay ${pos.line+1}，Columns ${pos.ch}`
+    $('#state').innerHTML = `Row ${pos.line+1}，Column ${pos.ch}`
   })
   //resize
   window.addEventListener('resize', () => {
