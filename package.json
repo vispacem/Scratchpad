@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "nodemon --watch views --exec electron .",
-    "dist": "electron-builder --win --x64"
+    "dist": "electron-builder --win --ia32"
   },
   "author": "resyu",
   "license": "MIT",
@@ -21,19 +21,12 @@
   "build": {
     "appId": "resyu-Scratchpad",
     "copyright": "resyu",
-    "productName": "代码草稿纸",
+    "productName": "scratchpad",
     "directories": {
       "output": "build"
     },
-    "mac": {
-      "target": [
-        "dmg",
-        "zip"
-      ]
-    },
     "win": {
       "target": [
-        "nsis",
         "zip"
       ],
       "icon": "assets/imgs/icon.ico",
@@ -42,6 +35,9 @@
     }
   },
   "dependencies": {
-    "codemirror": "^5.48.4"
+    "codemirror": "^5.48.4",
+    "auto-launch": "^5.0.5",
+    "node-schedule": "^1.3.0",
+    "puppeteer": "^1.20.0"    
   }
 }
